@@ -6,16 +6,16 @@ import LogoImage from "../assets/logo.png"
 const NavLinks = () => {
     return (
       <>
-        <div className="ml-1 font-custom font-semibold ">
+        <div className="font-custom font-semibold ">
           <Button text="Home" href="#home"/>
         </div>
-        <div className="ml-1 font-custom font-semibold">
+        <div className="font-custom font-semibold">
           <Button text="Sobre" href="#about" />
         </div>
-        <div className="ml-1 font-custom font-semibold">
+        <div className="font-custom font-semibold">
           <Button text="Portfolio" href="#portfolio" />
         </div>
-        <div className="ml-1 font-custom font-semibold">
+        <div className="font-custom font-semibold">
           <Button text="Orçamento" href="#" />
         </div>
       </>
@@ -35,7 +35,7 @@ export default function Navbar() {
       flex items-center justify-between py-1 px-10 lg:px-14 md:px-44
       fixed top-0 left-0 w-full border-b-2"
     >
-      <img className="flex-none h-32 w-32" src={LogoImage} alt="Logo" />
+      <img className="flex-none h-24 w-24 md:h-40 md:w-40" src={LogoImage} alt="Logo" />
       <nav className="w-1/3 flex justify-end items-center">
         <div className="hidden w-full items-center justify-end xl:flex">
           <NavLinks />
@@ -46,9 +46,9 @@ export default function Navbar() {
         <div className="xl:hidden">
           <button onClick={toggleNavbar}>
             {isOpen ? (
-              <HiOutlineX className="text-orange h-16 w-16" />
+              <HiOutlineX className="h-12 w-12" />
             ) : (
-              <HiMenu className="text-orange h-16 w-16" />
+              <HiMenu className="h-12 w-12" />
             )}
           </button>
         </div>

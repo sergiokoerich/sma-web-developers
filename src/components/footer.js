@@ -19,13 +19,13 @@ export default function Footer () {
       <footer className="flex flex-col md:flex-row h-full w-full items-center justify-between p-5 bg-gradient-to-r from-blue-800 to-blue-400">
         <div className='flex flex-row mb-2'>
             <a target="_blank" href="#">
-                <img className='h-20 w-20 mr-3 duration-200 hover:scale-125 active:scale-100' src={Insta}></img>
+                <img className='h-10 w-10 mr-3 duration-200 hover:scale-125 active:scale-100' src={Insta}></img>
             </a>
             <a target="_blank" href="#">
-                <img className='h-20 w-20 duration-200 hover:scale-125 active:scale-100' src={Wpp}></img>
+                <img className='h-10 w-10 duration-200 hover:scale-125 active:scale-100' src={Wpp}></img>
             </a>
         </div>
-        <p>&copy; {currentYear} SMA Web Developers. Todos os direitos reservados.</p>
+        <p className='max-md:text-center'>&copy; {currentYear} SMA Web Developers. Todos os direitos reservados.</p>
 
       </footer>
   );
