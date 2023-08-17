@@ -32,10 +32,10 @@ export default function Navbar() {
     <header
       className="
       bg-white flex-wrap z-20 mx-auto 
-      flex items-center justify-between py-1 px-10 lg:px-14 md:px-44
+      flex items-center justify-between py-1 px-10 lg:px-14 lg::px-44
       fixed top-0 left-0 w-full border-b-2"
     >
-      <img className="flex-none h-24 w-24 md:h-40 md:w-40" src={LogoImage} alt="Logo" />
+      <img className="flex-none h-24 w-24 lg::h-40 lg::w-40" src={LogoImage} alt="Logo" />
       <nav className="w-1/3 flex justify-end items-center">
         <div className="hidden w-full items-center justify-end xl:flex">
           <NavLinks />
